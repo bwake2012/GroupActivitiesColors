@@ -2,9 +2,16 @@
 
 This is s proof-of-concept demonstrator for the new Group Activities for FaceTime available with iOS 15. It's an extension of my [MultipeerPuppies](https://github.com/bwake2012/MultiPeerPuppies) proof-of-concept demonstrator.
 
+![Group Activities Colors for Vision Pro](GroupActivitiesScreenshotVisionPro.png)
+![Group Activities Colors for iPhone 12 Mini](GroupActivitiesScreenshotiPhone12Mini.png)
 
+I have a serious problem getting GroupActivities to work across platforms. As long as the app is built from the same target, it works, but the identical Target duplicated from the first and then modified will not. I can establish the session for both, but messages do not go through. I get the following error in the debugger:
 
-Here's a link to video of an [early version](https://youtu.be/utvN5USIeCU).
+```
+messageStream(for:messageType:):618 Explanation: Decoding message from data Error: Swift.DecodingError.valueNotFound(Any, Swift.DecodingError.Context(codingPath: [CodingKeys(stringValue: "message", intValue: nil), CodingKeys(stringValue: "t", intValue: nil)], debugDescription: "Decoder for value of GroupActivitiesColors.ChooseColorMessage.self not found.", underlyingError: nil))
+```
+
+I need separate targets so I can link libraries on one platform which are not compatible with the other.
 
 ## Acknowledgments:
 
