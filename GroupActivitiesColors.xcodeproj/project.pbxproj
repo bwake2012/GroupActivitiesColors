@@ -38,7 +38,6 @@
 		C41264DC2672BBDA0035983F /* GroupActivitiesColors.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GroupActivitiesColors.entitlements; sourceTree = "<group>"; };
 		C41264DF2672BE730035983F /* ChooseColorActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorActivity.swift; sourceTree = "<group>"; };
 		C430CC062D25F229000DC340 /* GroupActivitiesColors for Vision Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GroupActivitiesColors for Vision Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C430CC072D25F229000DC340 /* GroupActivitiesColors copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GroupActivitiesColors copy-Info.plist"; path = "/Users/Bob/Development/iOS 15/Bob Wakefield/GroupActivitiesColors/GroupActivitiesColors copy-Info.plist"; sourceTree = "<absolute>"; };
 		C472C00E26751FDF00319A91 /* GroupActivityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivityHandler.swift; sourceTree = "<group>"; };
 		C472C0102675221700319A91 /* ChooseColorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorMessage.swift; sourceTree = "<group>"; };
 		C472C0142676787800319A91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -70,7 +69,6 @@
 				C472C0142676787800319A91 /* README.md */,
 				C41264642672A4B80035983F /* GroupActivitiesColors */,
 				C4BF2D962CFEAD54004774ED /* GroupActivitiesColors for Vision Pro-Info.plist */,
-				C430CC072D25F229000DC340 /* GroupActivitiesColors copy-Info.plist */,
 				C41264632672A4B80035983F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -435,7 +433,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8G7W6WCEM9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GroupActivitiesColors copy-Info.plist";
+				INFOPLIST_FILE = "GroupActivitiesColors for Vision Pro-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -467,7 +465,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8G7W6WCEM9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GroupActivitiesColors copy-Info.plist";
+				INFOPLIST_FILE = "GroupActivitiesColors for Vision Pro-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
