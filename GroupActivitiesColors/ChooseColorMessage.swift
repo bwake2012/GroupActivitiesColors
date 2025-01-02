@@ -1,13 +1,13 @@
 //
-//  ChoosePuppyMessage.swift
-//  GroupActivitiesPuppies
+//  ChooseColorMessage.swift
+//  GroupActivitiesColors
 //
 //  Created by Bob Wakefield on 6/12/21.
 //
 
 import Foundation
 
-struct ChoosePuppyMessage: GroupActivityMessage, Codable {
+struct ChooseColorMessage: GroupActivityMessage, Codable {
 
     private(set) var id: UUID
     private(set) var timestamp: Date

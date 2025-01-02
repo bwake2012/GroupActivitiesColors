@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  GroupActivitiesPuppies
+//  GroupActivitiesColors
 //
 //  Created by Bob Wakefield on 6/10/21.
 //

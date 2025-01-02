@@ -1,14 +1,14 @@
-// GroupActivitiesPuppyView.swift
+// GroupActivitiesColorsView.swift
 //
 // Created by Bob Wakefield on 12/13/24.
-// for GroupActivitiesPuppies
+// for GroupActivitiesColors
 //
 // Using Swift 6.0
 // Running on macOS 15.1
 
 import UIKit
 
-class GroupActivitiesPuppyView: UIView {
+class GroupActivitiesColorsView: UIView {
 
     #if os(visionOS)
     private let topPadding: CGFloat = 32
@@ -39,7 +39,7 @@ class GroupActivitiesPuppyView: UIView {
     
     // <------------- UI Elements --------------->
 
-    private lazy var mainTitleLabel: UILabel = buildLabel(text: "Group Activities Puppies", style: .title1, alignment: .center)
+    private lazy var mainTitleLabel: UILabel = buildLabel(text: "Group Activities Colors", style: .title1, alignment: .center)
 
     private lazy var scrollEnvelope: UIView = {
         let view = UIView()
@@ -125,7 +125,7 @@ class GroupActivitiesPuppyView: UIView {
         return button
     }()
 
-    private lazy var dogButtonStack: UIStackView = {
+    private lazy var colorButtonStack: UIStackView = {
         let stackView = UIStackView()
         stackView.contentMode = .scaleAspectFit
         stackView.setContentCompressionResistancePriority(.required, for: .vertical)
@@ -137,15 +137,27 @@ class GroupActivitiesPuppyView: UIView {
         return stackView
     }()
 
-    lazy var currentDogImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.setContentCompressionResistancePriority(.required, for: .vertical)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
+    lazy var currentColorView: UIView = {
+        let view = UIImageView()
+        view.contentMode = .scaleAspectFit
+        view.setContentCompressionResistancePriority(.required, for: .vertical)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
 
-    lazy var currentDogLabel: UILabel = buildLabel(text: "No Puppy Selected", alignment: .center)
+    private var displayColorName: String = ""
+    var displayColor: String? {
+        set {
+            displayColorName = newValue ?? ""
+            currentColorView.backgroundColor = nametoColor(name: displayColorName)
+         }
+
+        get {
+            displayColorName
+        }
+    }
+
+    lazy var currentColorLabel: UILabel = buildLabel(text: "No Color Selected", alignment: .center)
 
     lazy var connectButton: UIButton = {
         let button = UIButton()
@@ -158,23 +170,21 @@ class GroupActivitiesPuppyView: UIView {
         return button
     }()
 
-    private func buildDogButton(imageName: String, title: String) -> UIButton {
+    private func buildColorButton(colorName: String, title: String) -> UIButton {
         let button = UIButton()
         button.contentMode = .scaleAspectFit
         button.contentHorizontalAlignment = .center
-        button.contentVerticalAlignment = .top
-        button.adjustsImageSizeForAccessibilityContentSizeCategory = true
+        button.contentVerticalAlignment = .center
         button.translatesAutoresizingMaskIntoConstraints = false
         button.titleLabel?.font = .preferredFont(forTextStyle: .body)
-        button.imageView?.contentMode = .scaleAspectFit
-        if let url = Bundle.main.url(forResource: imageName, withExtension: "png"),
-           let data = try? Data(contentsOf: url, options: .uncachedRead),
-           let image = UIImage(data: data) {
-
-            button.setImage(image, for: .normal)
-        }
+        button.titleLabel?.numberOfLines = 0
+        button.titleLabel?.textAlignment = .center
+        button.titleLabel?.lineBreakMode = .byWordWrapping
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(nametoColor(name: colorName), for: .normal)
+        button.backgroundColor = .black
         button.isAccessibilityElement = true
-        button.accessibilityIdentifier = imageName
+        button.accessibilityIdentifier = colorName
         button.accessibilityLabel = title
 
         NSLayoutConstraint.activate([
@@ -185,32 +195,29 @@ class GroupActivitiesPuppyView: UIView {
         return button
     }
 
-    private lazy var buttonDog1: UIButton =
-        buildDogButton(imageName: "AmericanEskimo", title: "American Eskimo")
+    private lazy var buttonColor1: UIButton =
+        buildColorButton(colorName: "red", title: "Red")
 
-    private lazy var buttonDog2: UIButton =
-        buildDogButton(imageName: "AnnaAvatar", title: "Anna Avatar")
+    private lazy var buttonColor2: UIButton =
+        buildColorButton(colorName: "orange", title: "Orange")
 
-    private lazy var buttonDog3: UIButton =
-        buildDogButton(imageName: "Boo", title: "Boo")
+    private lazy var buttonColor3: UIButton =
+        buildColorButton(colorName: "yellow", title: "Yellow")
 
-    private lazy var buttonDog4: UIButton =
-        buildDogButton(imageName: "Buddy", title: "Buddy")
+    private lazy var buttonColor4: UIButton =
+        buildColorButton(colorName: "green", title: "Green")
 
-    private lazy var buttonDog5: UIButton =
-        buildDogButton(imageName: "corgi", title: "Corgi")
+    private lazy var buttonColor5: UIButton =
+        buildColorButton(colorName: "blue", title: "Blue")
 
-    private lazy var buttonDog6: UIButton =
-        buildDogButton(imageName: "Pontus", title: "Pontus")
+    private lazy var buttonColor6: UIButton =
+        buildColorButton(colorName: "indigo", title: "Indigo")
 
-    private lazy var buttonDog7: UIButton =
-        buildDogButton(imageName: "SnowyTricolorSheltie", title: "Snowy Tricolor Sheltie")
+    private lazy var buttonColor7: UIButton =
+        buildColorButton(colorName: "violet", title: "Violet")
 
-    private lazy var buttonDog8: UIButton =
-        buildDogButton(imageName: "Buddy2 Small", title: "Buddy2")
-
-    lazy var dogButtons: [UIButton] = [
-        buttonDog1, buttonDog2, buttonDog3, buttonDog4, buttonDog5, buttonDog6, buttonDog7, buttonDog8
+    lazy var colorButtons: [UIButton] = [
+        buttonColor1, buttonColor2, buttonColor3, buttonColor4, buttonColor5, buttonColor6, buttonColor7,
     ]
 
     // <------------- View Hierachy --------------->
@@ -226,19 +233,18 @@ class GroupActivitiesPuppyView: UIView {
 
         scrollView.addSubview(scrollContents)
 
-        scrollContents.addSubview(dogButtonStack)
-        scrollContents.addSubview(currentDogImageView)
-        scrollContents.addSubview(currentDogLabel)
+        scrollContents.addSubview(colorButtonStack)
+        scrollContents.addSubview(currentColorView)
+        scrollContents.addSubview(currentColorLabel)
         scrollContents.addSubview(connectButton)
 
-        dogButtonStack.addArrangedSubview(buttonDog1)
-        dogButtonStack.addArrangedSubview(buttonDog2)
-        dogButtonStack.addArrangedSubview(buttonDog3)
-        dogButtonStack.addArrangedSubview(buttonDog4)
-        dogButtonStack.addArrangedSubview(buttonDog5)
-        dogButtonStack.addArrangedSubview(buttonDog6)
-        dogButtonStack.addArrangedSubview(buttonDog7)
-        dogButtonStack.addArrangedSubview(buttonDog8)
+        colorButtonStack.addArrangedSubview(buttonColor1)
+        colorButtonStack.addArrangedSubview(buttonColor2)
+        colorButtonStack.addArrangedSubview(buttonColor3)
+        colorButtonStack.addArrangedSubview(buttonColor4)
+        colorButtonStack.addArrangedSubview(buttonColor5)
+        colorButtonStack.addArrangedSubview(buttonColor6)
+        colorButtonStack.addArrangedSubview(buttonColor7)
 
         statusDisplayStack.addArrangedSubview(eligibilityStatusLabel)
         statusDisplayStack.addArrangedSubview(sessionStatusLabel)
@@ -283,20 +289,21 @@ class GroupActivitiesPuppyView: UIView {
             scrollContents.widthAnchor.constraint(equalTo: scrollEnvelope.widthAnchor),
             scrollContents.heightAnchor.constraint(greaterThanOrEqualTo: scrollEnvelope.heightAnchor),
 
-            dogButtonStack.topAnchor.constraint(equalTo: scrollContents.topAnchor),
-            dogButtonStack.leadingAnchor.constraint(equalTo: scrollContents.leadingAnchor),
-            dogButtonStack.centerXAnchor.constraint(equalTo: scrollContents.centerXAnchor),
+            colorButtonStack.topAnchor.constraint(equalTo: scrollContents.topAnchor),
+            colorButtonStack.leadingAnchor.constraint(equalTo: scrollContents.leadingAnchor),
+            colorButtonStack.centerXAnchor.constraint(equalTo: scrollContents.centerXAnchor),
 
-            currentDogImageView.topAnchor.constraint(equalTo: dogButtonStack.bottomAnchor, constant: verticalSpacing),
-            currentDogImageView.leadingAnchor.constraint(greaterThanOrEqualTo: scrollContents.leadingAnchor),
-            scrollContents.trailingAnchor.constraint(greaterThanOrEqualTo: currentDogImageView.trailingAnchor),
-            currentDogImageView.centerXAnchor.constraint(equalTo: scrollContents.centerXAnchor),
+            currentColorView.topAnchor.constraint(equalTo: colorButtonStack.bottomAnchor, constant: verticalSpacing),
+            currentColorView.leadingAnchor.constraint(equalTo: scrollContents.leadingAnchor),
+            scrollContents.trailingAnchor.constraint(equalTo: currentColorView.trailingAnchor),
+            currentColorView.centerXAnchor.constraint(equalTo: scrollContents.centerXAnchor),
+            currentColorView.heightAnchor.constraint(equalToConstant: minTouchTargetHeight),
+  
+            currentColorLabel.topAnchor.constraint(equalTo: currentColorView.bottomAnchor, constant: verticalSpacing),
+            currentColorLabel.leadingAnchor.constraint(equalTo: scrollContents.leadingAnchor),
+            currentColorLabel.trailingAnchor.constraint(equalTo: scrollContents.trailingAnchor),
 
-            currentDogLabel.topAnchor.constraint(equalTo: currentDogImageView.bottomAnchor, constant: verticalSpacing),
-            currentDogLabel.leadingAnchor.constraint(equalTo: scrollContents.leadingAnchor),
-            currentDogLabel.trailingAnchor.constraint(equalTo: scrollContents.trailingAnchor),
-
-            connectButton.topAnchor.constraint(greaterThanOrEqualTo: currentDogLabel.bottomAnchor, constant: verticalSpacing),
+            connectButton.topAnchor.constraint(greaterThanOrEqualTo: currentColorLabel.bottomAnchor, constant: verticalSpacing),
             scrollContents.bottomAnchor.constraint(equalTo: connectButton.bottomAnchor, constant: verticalSpacing),
             connectButton.leadingAnchor.constraint(equalTo: scrollContents.leadingAnchor),
             scrollContents.trailingAnchor.constraint(equalTo: connectButton.trailingAnchor),
@@ -314,4 +321,16 @@ class GroupActivitiesPuppyView: UIView {
         statusStack.backgroundColor = .secondarySystemBackground
     }
 
+    private func nametoColor(name: String) -> UIColor {
+        switch name {
+        case "red": return .systemRed
+        case "orange": return .systemOrange
+        case "yellow": return .systemYellow
+        case "green": return .systemGreen
+        case "blue": return .systemBlue
+        case "indigo": return .systemIndigo
+        case "violet": return UIColor(red: 148, green: 0, blue: 211, alpha: 1)
+        default: return .systemBackground
+        }
+    }
 }

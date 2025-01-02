@@ -1,6 +1,6 @@
 //
 //  GroupActivityHandler.swift
-//  GroupActivitiesPuppies
+//  GroupActivitiesColors
 //
 //  Created by Bob Wakefield on 6/12/21.
 //

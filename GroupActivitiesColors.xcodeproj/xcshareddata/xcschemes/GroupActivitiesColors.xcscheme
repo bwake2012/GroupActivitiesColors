@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4BF2D7D2CFEAD54004774ED"
-               BuildableName = "GroupActivitiesPuppies for visionOS.app"
-               BlueprintName = "GroupActivitiesPuppies for visionOS"
-               ReferencedContainer = "container:GroupActivitiesPuppies.xcodeproj">
+               BlueprintIdentifier = "C41264612672A4B80035983F"
+               BuildableName = "GroupActivitiesColors.app"
+               BlueprintName = "GroupActivitiesColors"
+               ReferencedContainer = "container:GroupActivitiesColors.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4BF2D7D2CFEAD54004774ED"
-            BuildableName = "GroupActivitiesPuppies for visionOS.app"
-            BlueprintName = "GroupActivitiesPuppies for visionOS"
-            ReferencedContainer = "container:GroupActivitiesPuppies.xcodeproj">
+            BlueprintIdentifier = "C41264612672A4B80035983F"
+            BuildableName = "GroupActivitiesColors.app"
+            BlueprintName = "GroupActivitiesColors"
+            ReferencedContainer = "container:GroupActivitiesColors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4BF2D7D2CFEAD54004774ED"
-            BuildableName = "GroupActivitiesPuppies for visionOS.app"
-            BlueprintName = "GroupActivitiesPuppies for visionOS"
-            ReferencedContainer = "container:GroupActivitiesPuppies.xcodeproj">
+            BlueprintIdentifier = "C41264612672A4B80035983F"
+            BuildableName = "GroupActivitiesColors.app"
+            BlueprintName = "GroupActivitiesColors"
+            ReferencedContainer = "container:GroupActivitiesColors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

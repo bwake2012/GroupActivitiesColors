@@ -1,6 +1,6 @@
 //
-//  GroupActivitiesPuppyViewController.swift
-//  GroupActivitiesPuppies
+//  GroupActivitiesColorsViewsController.swift
+//  GroupActivitiesColors
 //
 //  Created by Bob Wakefield on 6/10/21.
 //
@@ -8,9 +8,9 @@
 import UIKit
 import GroupActivities
 
-class GroupActivitiesPuppyViewController: UIViewController {
+class GroupActivitiesColorsViewsController: UIViewController {
 
-    private var activityHandler: GroupActivityHandler<ChoosePuppyActivity, ChoosePuppyMessage>?
+    private var activityHandler: GroupActivityHandler<ChooseColorActivity, ChooseColorMessage>?
 
     private var canConnect: Bool {
 
@@ -27,41 +27,47 @@ class GroupActivitiesPuppyViewController: UIViewController {
         activityHandler?.participantCount ?? 0
     }
 
-    var puppyView: GroupActivitiesPuppyView?
+    var colorView: GroupActivitiesColorsView?
 
     var eligibilityStatusLabel: UILabel? {
-        puppyView?.eligibilityStatusLabel
+        colorView?.eligibilityStatusLabel
     }
 
     var sessionStatusLabel: UILabel? {
-        puppyView?.sessionStatusLabel
+        colorView?.sessionStatusLabel
     }
 
     var participantsStatusLabel: UILabel? {
-        puppyView?.participantsStatusLabel
+        colorView?.participantsStatusLabel
     }
 
     var generalStatusLabel: UILabel? {
-        puppyView?.generalStatusLabel
+        colorView?.generalStatusLabel
     }
 
     var connectButton: UIButton? {
-        puppyView?.connectButton
+        colorView?.connectButton
     }
 
-    var displayImage: UIImageView? {
-        puppyView?.currentDogImageView
+    var displayColor: String? {
+        set {
+            colorView?.displayColor = newValue
+        }
+
+        get {
+            colorView?.displayColor
+        }
     }
 
     var displayString: UILabel? {
-        puppyView?.currentDogLabel
+        colorView?.currentColorLabel
     }
 
     var refreshButton: UIButton? {
-        puppyView?.refreshButton
+        colorView?.refreshButton
     }
 
-    var puppyButtons: [UIButton] = []
+    var colorButtons: [UIButton] = []
 
     @objc func connectTapped(_ sender: UIButton) {
 
@@ -81,7 +87,7 @@ class GroupActivitiesPuppyViewController: UIViewController {
         }
     }
 
-    @objc func sendPuppyTapped(_ sender: UIButton) {
+    @objc func sendColorTapped(_ sender: UIButton) {
 
         guard let fileName = sender.accessibilityIdentifier else {
 
@@ -90,23 +96,23 @@ class GroupActivitiesPuppyViewController: UIViewController {
 
         let title = sender.accessibilityLabel ?? "No title"
 
-        activityHandler?.send(message: ChoosePuppyMessage(fileName: fileName, title: title))
+        activityHandler?.send(message: ChooseColorMessage(fileName: fileName, title: title))
 
         print("Button tapped: \(title)")
     }
 
     override func loadView() {
-        puppyView = GroupActivitiesPuppyView(frame: .zero)
+        colorView = GroupActivitiesColorsView(frame: .zero)
 
-        puppyView?.connectButton.addTarget(self, action: #selector(self.connectTapped(_ :)), for: .touchUpInside)
-        puppyButtons = puppyView?.dogButtons.compactMap {
-            $0.addTarget(self, action: #selector(self.sendPuppyTapped(_:)), for: .touchUpInside)
+        colorView?.connectButton.addTarget(self, action: #selector(self.connectTapped(_ :)), for: .touchUpInside)
+        colorButtons = colorView?.colorButtons.compactMap {
+            $0.addTarget(self, action: #selector(self.sendColorTapped(_:)), for: .touchUpInside)
 
             return $0
         } ?? []
-        puppyView?.refreshButton.addTarget(self, action: #selector(refreshTapped), for: .touchUpInside)
+        colorView?.refreshButton.addTarget(self, action: #selector(refreshTapped), for: .touchUpInside)
 
-        self.view = puppyView
+        self.view = colorView
     }
 
     override func viewDidLoad() {
@@ -116,12 +122,12 @@ class GroupActivitiesPuppyViewController: UIViewController {
         // Do any additional setup after loading the view.
         configureConnectButton()
 
-        activityHandler = GroupActivityHandler(activity: ChoosePuppyActivity(), delegate: self)
+        activityHandler = GroupActivityHandler(activity: ChooseColorActivity(), delegate: self)
         activityHandler?.beginWaitingForSessions()
     }
 }
 
-extension GroupActivitiesPuppyViewController: GroupActivityHandlerDelegate {
+extension GroupActivitiesColorsViewsController: GroupActivityHandlerDelegate {
 
     func stateChanged() {
 
@@ -138,14 +144,14 @@ extension GroupActivitiesPuppyViewController: GroupActivityHandlerDelegate {
     func update<M: GroupActivityMessage>(message: M) {
 
         // make certain the message is the right type
-        guard let message = message as? ChoosePuppyMessage else {
+        guard let message = message as? ChooseColorMessage else {
 
-            preconditionFailure("Updated with a GroupActivityMessage that is not a ChoosePuppyMessage!")
+            preconditionFailure("Updated with a GroupActivityMessage that is not a ChooseColorMessage!")
         }
 
         DispatchQueue.main.async {
 
-            self.displayImage?.image = self.picture(for: message.fileName)
+            self.displayColor = message.fileName
             self.displayString?.text = message.title
             self.generalStatusLabel?.text = nil
             self.connectButton?.isEnabled = !self.isConnected
@@ -158,29 +164,6 @@ extension GroupActivitiesPuppyViewController: GroupActivityHandlerDelegate {
 
             self.generalStatusLabel?.text = error.localizedDescription
         }
-    }
-
-    private func picture(for puppyName: String) -> UIImage? {
-
-        guard let url = Bundle.main.url(forResource: puppyName, withExtension: "png")
-        else {
-            generalStatusLabel?.text = "No URL for \(puppyName).png"
-            return nil
-        }
-
-        guard let data = try? Data(contentsOf: url, options: .uncachedRead)
-        else {
-            generalStatusLabel?.text = "No data from \(puppyName)"
-            return nil
-        }
-
-        guard let image = UIImage(data: data)
-        else {
-            generalStatusLabel?.text = "Data from \(puppyName) is not an image."
-            return nil
-        }
-
-        return image
     }
 
     private func configureConnectButton() {

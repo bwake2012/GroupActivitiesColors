@@ -9,52 +9,52 @@
 /* Begin PBXBuildFile section */
 		C41264662672A4B80035983F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264652672A4B80035983F /* AppDelegate.swift */; };
 		C41264682672A4B80035983F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264672672A4B80035983F /* SceneDelegate.swift */; };
-		C412646A2672A4B80035983F /* GroupActivitiesPuppyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264692672A4B80035983F /* GroupActivitiesPuppyViewController.swift */; };
+		C412646A2672A4B80035983F /* GroupActivitiesColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264692672A4B80035983F /* GroupActivitiesColorsViewController.swift */; };
 		C412646F2672A4B90035983F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C412646E2672A4B90035983F /* Assets.xcassets */; };
 		C41264722672A4B90035983F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41264702672A4B90035983F /* LaunchScreen.storyboard */; };
-		C41264D02672A7380035983F /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = C41264C82672A7380035983F /* blank.png */; };
-		C41264D12672A7380035983F /* Boo.png in Resources */ = {isa = PBXBuildFile; fileRef = C41264C92672A7380035983F /* Boo.png */; };
-		C41264D42672A7380035983F /* corgi.png in Resources */ = {isa = PBXBuildFile; fileRef = C41264CC2672A7380035983F /* corgi.png */; };
-		C41264D52672A7380035983F /* Pontus.png in Resources */ = {isa = PBXBuildFile; fileRef = C41264CD2672A7380035983F /* Pontus.png */; };
-		C41264D62672A7380035983F /* AnnaAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = C41264CE2672A7380035983F /* AnnaAvatar.png */; };
-		C41264D72672A7380035983F /* Buddy.png in Resources */ = {isa = PBXBuildFile; fileRef = C41264CF2672A7380035983F /* Buddy.png */; };
-		C41264DE2672BC160035983F /* AmericanEskimo.png in Resources */ = {isa = PBXBuildFile; fileRef = C41264DD2672BC160035983F /* AmericanEskimo.png */; };
-		C41264E02672BE730035983F /* ChoosePuppyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264DF2672BE730035983F /* ChoosePuppyActivity.swift */; };
+		C41264E02672BE730035983F /* ChooseColorActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264DF2672BE730035983F /* ChooseColorActivity.swift */; };
+		C430CBF82D25F229000DC340 /* GroupActivitiesColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264692672A4B80035983F /* GroupActivitiesColorsViewController.swift */; };
+		C430CBF92D25F229000DC340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264652672A4B80035983F /* AppDelegate.swift */; };
+		C430CBFA2D25F229000DC340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264672672A4B80035983F /* SceneDelegate.swift */; };
+		C430CBFB2D25F229000DC340 /* ChooseColorActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41264DF2672BE730035983F /* ChooseColorActivity.swift */; };
+		C430CBFC2D25F229000DC340 /* GroupActivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472C00E26751FDF00319A91 /* GroupActivityHandler.swift */; };
+		C430CBFD2D25F229000DC340 /* GroupActivitiesColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6FE202D0D2205004FE456 /* GroupActivitiesColorsView.swift */; };
+		C430CBFE2D25F229000DC340 /* ChooseColorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472C0102675221700319A91 /* ChooseColorMessage.swift */; };
+		C430CC012D25F229000DC340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41264702672A4B90035983F /* LaunchScreen.storyboard */; };
+		C430CC022D25F229000DC340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C412646E2672A4B90035983F /* Assets.xcassets */; };
 		C472C00F26751FDF00319A91 /* GroupActivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472C00E26751FDF00319A91 /* GroupActivityHandler.swift */; };
-		C472C0112675221700319A91 /* ChoosePuppyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472C0102675221700319A91 /* ChoosePuppyMessage.swift */; };
-		C472C01326758BB100319A91 /* SnowyTricolorSheltie.png in Resources */ = {isa = PBXBuildFile; fileRef = C472C01226758BB100319A91 /* SnowyTricolorSheltie.png */; };
-		C4B6FE212D0D2205004FE456 /* GroupActivitiesPuppyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6FE202D0D2205004FE456 /* GroupActivitiesPuppyView.swift */; };
-		C4BA7E1A2D1C8DBC00B16704 /* Buddy2 Small.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BA7E192D1C8DBC00B16704 /* Buddy2 Small.png */; };
+		C472C0112675221700319A91 /* ChooseColorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472C0102675221700319A91 /* ChooseColorMessage.swift */; };
+		C4B6FE212D0D2205004FE456 /* GroupActivitiesColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6FE202D0D2205004FE456 /* GroupActivitiesColorsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C41264622672A4B80035983F /* GroupActivitiesPuppies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupActivitiesPuppies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41264622672A4B80035983F /* GroupActivitiesColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupActivitiesColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41264652672A4B80035983F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C41264672672A4B80035983F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C41264692672A4B80035983F /* GroupActivitiesPuppyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivitiesPuppyViewController.swift; sourceTree = "<group>"; };
+		C41264692672A4B80035983F /* GroupActivitiesColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivitiesColorsViewController.swift; sourceTree = "<group>"; };
 		C412646E2672A4B90035983F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C41264712672A4B90035983F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C41264732672A4B90035983F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C41264C82672A7380035983F /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
-		C41264C92672A7380035983F /* Boo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boo.png; sourceTree = "<group>"; };
-		C41264CC2672A7380035983F /* corgi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corgi.png; sourceTree = "<group>"; };
-		C41264CD2672A7380035983F /* Pontus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pontus.png; sourceTree = "<group>"; };
-		C41264CE2672A7380035983F /* AnnaAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnnaAvatar.png; sourceTree = "<group>"; };
-		C41264CF2672A7380035983F /* Buddy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Buddy.png; sourceTree = "<group>"; };
-		C41264DC2672BBDA0035983F /* GroupActivitiesPuppies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GroupActivitiesPuppies.entitlements; sourceTree = "<group>"; };
-		C41264DD2672BC160035983F /* AmericanEskimo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AmericanEskimo.png; sourceTree = "<group>"; };
-		C41264DF2672BE730035983F /* ChoosePuppyActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePuppyActivity.swift; sourceTree = "<group>"; };
+		C41264DC2672BBDA0035983F /* GroupActivitiesColors.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GroupActivitiesColors.entitlements; sourceTree = "<group>"; };
+		C41264DF2672BE730035983F /* ChooseColorActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorActivity.swift; sourceTree = "<group>"; };
+		C430CC062D25F229000DC340 /* GroupActivitiesColors for Vision Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GroupActivitiesColors for Vision Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C430CC072D25F229000DC340 /* GroupActivitiesColors copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GroupActivitiesColors copy-Info.plist"; path = "/Users/Bob/Development/iOS 15/Bob Wakefield/GroupActivitiesColors/GroupActivitiesColors copy-Info.plist"; sourceTree = "<absolute>"; };
 		C472C00E26751FDF00319A91 /* GroupActivityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivityHandler.swift; sourceTree = "<group>"; };
-		C472C0102675221700319A91 /* ChoosePuppyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePuppyMessage.swift; sourceTree = "<group>"; };
-		C472C01226758BB100319A91 /* SnowyTricolorSheltie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnowyTricolorSheltie.png; sourceTree = "<group>"; };
+		C472C0102675221700319A91 /* ChooseColorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorMessage.swift; sourceTree = "<group>"; };
 		C472C0142676787800319A91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C4B6FE202D0D2205004FE456 /* GroupActivitiesPuppyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivitiesPuppyView.swift; sourceTree = "<group>"; };
-		C4BA7E192D1C8DBC00B16704 /* Buddy2 Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Buddy2 Small.png"; sourceTree = "<group>"; };
-		C4BF2D962CFEAD54004774ED /* GroupActivitiesPuppies for Vision Pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GroupActivitiesPuppies for Vision Pro-Info.plist"; path = "/Users/Bob/Development/iOS 15/Bob Wakefield/GroupActivitiesPuppies/GroupActivitiesPuppies for Vision Pro-Info.plist"; sourceTree = "<absolute>"; };
+		C4B6FE202D0D2205004FE456 /* GroupActivitiesColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivitiesColorsView.swift; sourceTree = "<group>"; };
+		C4BF2D962CFEAD54004774ED /* GroupActivitiesColors for Vision Pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GroupActivitiesColors for Vision Pro-Info.plist"; path = "/Users/Bob/Development/iOS 15/Bob Wakefield/GroupActivitiesPuppies/GroupActivitiesColors for Vision Pro-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C412645F2672A4B80035983F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C430CBFF2D25F229000DC340 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,8 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				C472C0142676787800319A91 /* README.md */,
-				C41264642672A4B80035983F /* GroupActivitiesPuppies */,
-				C4BF2D962CFEAD54004774ED /* GroupActivitiesPuppies for Vision Pro-Info.plist */,
+				C41264642672A4B80035983F /* GroupActivitiesColors */,
+				C4BF2D962CFEAD54004774ED /* GroupActivitiesColors for Vision Pro-Info.plist */,
+				C430CC072D25F229000DC340 /* GroupActivitiesColors copy-Info.plist */,
 				C41264632672A4B80035983F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,42 +78,34 @@
 		C41264632672A4B80035983F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C41264622672A4B80035983F /* GroupActivitiesPuppies.app */,
+				C41264622672A4B80035983F /* GroupActivitiesColors.app */,
+				C430CC062D25F229000DC340 /* GroupActivitiesColors for Vision Pro.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C41264642672A4B80035983F /* GroupActivitiesPuppies */ = {
+		C41264642672A4B80035983F /* GroupActivitiesColors */ = {
 			isa = PBXGroup;
 			children = (
-				C41264DC2672BBDA0035983F /* GroupActivitiesPuppies.entitlements */,
+				C41264DC2672BBDA0035983F /* GroupActivitiesColors.entitlements */,
 				C41264C72672A7100035983F /* Images */,
 				C41264652672A4B80035983F /* AppDelegate.swift */,
 				C472C00E26751FDF00319A91 /* GroupActivityHandler.swift */,
-				C41264DF2672BE730035983F /* ChoosePuppyActivity.swift */,
-				C472C0102675221700319A91 /* ChoosePuppyMessage.swift */,
+				C41264DF2672BE730035983F /* ChooseColorActivity.swift */,
+				C472C0102675221700319A91 /* ChooseColorMessage.swift */,
 				C41264672672A4B80035983F /* SceneDelegate.swift */,
-				C41264692672A4B80035983F /* GroupActivitiesPuppyViewController.swift */,
-				C4B6FE202D0D2205004FE456 /* GroupActivitiesPuppyView.swift */,
+				C41264692672A4B80035983F /* GroupActivitiesColorsViewController.swift */,
+				C4B6FE202D0D2205004FE456 /* GroupActivitiesColorsView.swift */,
 				C412646E2672A4B90035983F /* Assets.xcassets */,
 				C41264702672A4B90035983F /* LaunchScreen.storyboard */,
 				C41264732672A4B90035983F /* Info.plist */,
 			);
-			path = GroupActivitiesPuppies;
+			path = GroupActivitiesColors;
 			sourceTree = "<group>";
 		};
 		C41264C72672A7100035983F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				C41264DD2672BC160035983F /* AmericanEskimo.png */,
-				C41264CE2672A7380035983F /* AnnaAvatar.png */,
-				C41264C82672A7380035983F /* blank.png */,
-				C41264C92672A7380035983F /* Boo.png */,
-				C41264CF2672A7380035983F /* Buddy.png */,
-				C41264CC2672A7380035983F /* corgi.png */,
-				C41264CD2672A7380035983F /* Pontus.png */,
-				C472C01226758BB100319A91 /* SnowyTricolorSheltie.png */,
-				C4BA7E192D1C8DBC00B16704 /* Buddy2 Small.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -120,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C41264612672A4B80035983F /* GroupActivitiesPuppies */ = {
+		C41264612672A4B80035983F /* GroupActivitiesColors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C41264762672A4B90035983F /* Build configuration list for PBXNativeTarget "GroupActivitiesPuppies" */;
+			buildConfigurationList = C41264762672A4B90035983F /* Build configuration list for PBXNativeTarget "GroupActivitiesColors" */;
 			buildPhases = (
 				C412645E2672A4B80035983F /* Sources */,
 				C412645F2672A4B80035983F /* Frameworks */,
@@ -132,9 +125,26 @@
 			);
 			dependencies = (
 			);
-			name = GroupActivitiesPuppies;
+			name = GroupActivitiesColors;
 			productName = GroupActivitiesPuppies;
-			productReference = C41264622672A4B80035983F /* GroupActivitiesPuppies.app */;
+			productReference = C41264622672A4B80035983F /* GroupActivitiesColors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C430CBF62D25F229000DC340 /* GroupActivitiesColors for Vision Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C430CC032D25F229000DC340 /* Build configuration list for PBXNativeTarget "GroupActivitiesColors for Vision Pro" */;
+			buildPhases = (
+				C430CBF72D25F229000DC340 /* Sources */,
+				C430CBFF2D25F229000DC340 /* Frameworks */,
+				C430CC002D25F229000DC340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GroupActivitiesColors for Vision Pro";
+			productName = GroupActivitiesPuppies;
+			productReference = C430CC062D25F229000DC340 /* GroupActivitiesColors for Vision Pro.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C412645D2672A4B80035983F /* Build configuration list for PBXProject "GroupActivitiesPuppies" */;
+			buildConfigurationList = C412645D2672A4B80035983F /* Build configuration list for PBXProject "GroupActivitiesColors" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -165,7 +175,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C41264612672A4B80035983F /* GroupActivitiesPuppies */,
+				C41264612672A4B80035983F /* GroupActivitiesColors */,
+				C430CBF62D25F229000DC340 /* GroupActivitiesColors for Vision Pro */,
 			);
 		};
 /* End PBXProject section */
@@ -175,17 +186,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41264D72672A7380035983F /* Buddy.png in Resources */,
-				C41264D42672A7380035983F /* corgi.png in Resources */,
-				C41264D02672A7380035983F /* blank.png in Resources */,
-				C472C01326758BB100319A91 /* SnowyTricolorSheltie.png in Resources */,
-				C41264D62672A7380035983F /* AnnaAvatar.png in Resources */,
-				C41264D52672A7380035983F /* Pontus.png in Resources */,
-				C4BA7E1A2D1C8DBC00B16704 /* Buddy2 Small.png in Resources */,
 				C41264722672A4B90035983F /* LaunchScreen.storyboard in Resources */,
 				C412646F2672A4B90035983F /* Assets.xcassets in Resources */,
-				C41264DE2672BC160035983F /* AmericanEskimo.png in Resources */,
-				C41264D12672A7380035983F /* Boo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C430CC002D25F229000DC340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C430CC012D25F229000DC340 /* LaunchScreen.storyboard in Resources */,
+				C430CC022D25F229000DC340 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,13 +207,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C412646A2672A4B80035983F /* GroupActivitiesPuppyViewController.swift in Sources */,
+				C412646A2672A4B80035983F /* GroupActivitiesColorsViewController.swift in Sources */,
 				C41264662672A4B80035983F /* AppDelegate.swift in Sources */,
 				C41264682672A4B80035983F /* SceneDelegate.swift in Sources */,
-				C41264E02672BE730035983F /* ChoosePuppyActivity.swift in Sources */,
+				C41264E02672BE730035983F /* ChooseColorActivity.swift in Sources */,
 				C472C00F26751FDF00319A91 /* GroupActivityHandler.swift in Sources */,
-				C4B6FE212D0D2205004FE456 /* GroupActivitiesPuppyView.swift in Sources */,
-				C472C0112675221700319A91 /* ChoosePuppyMessage.swift in Sources */,
+				C4B6FE212D0D2205004FE456 /* GroupActivitiesColorsView.swift in Sources */,
+				C472C0112675221700319A91 /* ChooseColorMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C430CBF72D25F229000DC340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C430CBF82D25F229000DC340 /* GroupActivitiesColorsViewController.swift in Sources */,
+				C430CBF92D25F229000DC340 /* AppDelegate.swift in Sources */,
+				C430CBFA2D25F229000DC340 /* SceneDelegate.swift in Sources */,
+				C430CBFB2D25F229000DC340 /* ChooseColorActivity.swift in Sources */,
+				C430CBFC2D25F229000DC340 /* GroupActivityHandler.swift in Sources */,
+				C430CBFD2D25F229000DC340 /* GroupActivitiesColorsView.swift in Sources */,
+				C430CBFE2D25F229000DC340 /* ChooseColorMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,12 +368,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = GroupActivitiesPuppies/GroupActivitiesPuppies.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GroupActivitiesColors/GroupActivitiesColors.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8G7W6WCEM9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GroupActivitiesPuppies/Info.plist;
+				INFOPLIST_FILE = GroupActivitiesColors/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -358,14 +383,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.cockleburr.GroupActivitiesPuppies;
+				PRODUCT_BUNDLE_IDENTIFIER = net.cockleburr.GroupActivitiesColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -374,12 +399,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = GroupActivitiesPuppies/GroupActivitiesPuppies.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GroupActivitiesColors/GroupActivitiesColors.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8G7W6WCEM9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GroupActivitiesPuppies/Info.plist;
+				INFOPLIST_FILE = GroupActivitiesColors/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -389,21 +414,85 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.cockleburr.GroupActivitiesPuppies;
+				PRODUCT_BUNDLE_IDENTIFIER = net.cockleburr.GroupActivitiesColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C430CC042D25F229000DC340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GroupActivitiesColors/GroupActivitiesColors.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8G7W6WCEM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GroupActivitiesColors copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.cockleburr.GroupActivitiesColors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Debug;
+		};
+		C430CC052D25F229000DC340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GroupActivitiesColors/GroupActivitiesColors.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8G7W6WCEM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GroupActivitiesColors copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.cockleburr.GroupActivitiesColors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C412645D2672A4B80035983F /* Build configuration list for PBXProject "GroupActivitiesPuppies" */ = {
+		C412645D2672A4B80035983F /* Build configuration list for PBXProject "GroupActivitiesColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C41264742672A4B90035983F /* Debug */,
@@ -412,11 +501,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C41264762672A4B90035983F /* Build configuration list for PBXNativeTarget "GroupActivitiesPuppies" */ = {
+		C41264762672A4B90035983F /* Build configuration list for PBXNativeTarget "GroupActivitiesColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C41264772672A4B90035983F /* Debug */,
 				C41264782672A4B90035983F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C430CC032D25F229000DC340 /* Build configuration list for PBXNativeTarget "GroupActivitiesColors for Vision Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C430CC042D25F229000DC340 /* Debug */,
+				C430CC052D25F229000DC340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

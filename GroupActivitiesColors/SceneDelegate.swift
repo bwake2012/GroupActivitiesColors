@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  GroupActivitiesPuppies
+//  GroupActivitiesColors
 //
 //  Created by Bob Wakefield on 6/10/21.
 //
@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
 
-        window.rootViewController = GroupActivitiesPuppyViewController()
+        window.rootViewController = GroupActivitiesColorsViewsController()
         window.makeKeyAndVisible()
 
         self.window = window
