@@ -291,12 +291,11 @@ class GroupActivitiesColorsView: UIView {
 
             colorButtonStack.topAnchor.constraint(equalTo: scrollContents.topAnchor),
             colorButtonStack.leadingAnchor.constraint(equalTo: scrollContents.leadingAnchor),
-            colorButtonStack.centerXAnchor.constraint(equalTo: scrollContents.centerXAnchor),
+            scrollContents.trailingAnchor.constraint(equalTo: colorButtonStack.trailingAnchor),
 
             currentColorView.topAnchor.constraint(equalTo: colorButtonStack.bottomAnchor, constant: verticalSpacing),
             currentColorView.leadingAnchor.constraint(equalTo: scrollContents.leadingAnchor),
             scrollContents.trailingAnchor.constraint(equalTo: currentColorView.trailingAnchor),
-            currentColorView.centerXAnchor.constraint(equalTo: scrollContents.centerXAnchor),
             currentColorView.heightAnchor.constraint(equalToConstant: minTouchTargetHeight),
   
             currentColorLabel.topAnchor.constraint(equalTo: currentColorView.bottomAnchor, constant: verticalSpacing),
